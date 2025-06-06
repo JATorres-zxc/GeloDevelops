@@ -19,7 +19,7 @@ const TechStack = () => {
       {technologies.map((tech, index) => (
         <div
           key={tech.name}
-          className="flex flex-col items-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:scale-105"
+          className="flex flex-col items-center p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md dark:shadow-gray-900/20 transition-all duration-300 hover:transform hover:scale-105"
           style={{ animationDelay: `${index * 0.1}s` }}
         >
           <div 
@@ -28,7 +28,7 @@ const TechStack = () => {
           >
             {tech.name.charAt(0)}
           </div>
-          <span className="text-gray-700 font-medium text-center">{tech.name}</span>
+          <span className="text-gray-700 dark:text-gray-300 font-medium text-center">{tech.name}</span>
         </div>
       ))}
     </div>
