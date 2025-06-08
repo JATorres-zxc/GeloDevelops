@@ -19,7 +19,7 @@ const TechStack = () => {
       {technologies.map((tech, index) => (
         <div
           key={tech.name}
-          className="flex flex-col items-center p-6 bg-card dark:bg-card rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:scale-105"
+          className="flex flex-col items-center p-6 bg-card dark:bg-gray-900 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:scale-105"
           style={{ animationDelay: `${index * 0.1}s` }}
         >
           <div 

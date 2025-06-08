@@ -113,8 +113,8 @@ const Home = () => {
                     {/* Step Content */}
                     <div className="text-center">
                       <div className="flex justify-center mb-4">
-                        <div className="w-16 h-16 bg-background dark:bg-background rounded-full flex items-center justify-center border border-border">
-                          <step.icon className="w-8 h-8 text-primary dark:text-primary" />
+                        <div className="w-16 h-16 bg-background dark:bg-gray-900 rounded-full flex items-center justify-center border border-border">
+                          <step.icon className="w-8 h-8 text-primary dark:bg-gray-900" />
                         </div>
                       </div>
                       <h3 className="text-xl font-semibold text-foreground mb-3">
@@ -170,7 +170,7 @@ const Home = () => {
             {sellingPoints.map((point, index) => (
               <div
                 key={point.title}
-                className="bg-background dark:bg-background p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1 border border-border"
+                className="bg-background dark:bg-gray-900 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:transform hover:-translate-y-1 border border-border"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="flex flex-col items-center text-center">

@@ -55,7 +55,7 @@ const About = () => {
           </div>
           
           <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <div className="bg-card dark:bg-card rounded-2xl p-8 shadow-lg">
+            <div className="bg-card dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
               <h3 className="text-xl font-semibold text-foreground mb-6 text-center">
                 Technologies I Work With
               </h3>
@@ -83,7 +83,7 @@ const About = () => {
             {traits.map((trait, index) => (
               <div
                 key={index}
-                className="bg-card dark:bg-card p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 text-center"
+                className="bg-card dark:bg-gray-900 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 text-center"
               >
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 bg-primary/10 dark:bg-primary/10 rounded-full flex items-center justify-center">
