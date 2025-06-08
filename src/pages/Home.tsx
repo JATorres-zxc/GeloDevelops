@@ -6,7 +6,7 @@ import SellingPoints from '../components/SellingPoints';
 
 const Home = () => {
   return (
-    <div>
+    <div className="min-h-screen bg-gradient-to-br from-white to-secondary dark:from-gray-900 dark:to-gray-800">
       <Hero />
       <HowItWorks />
       <SellingPoints />
