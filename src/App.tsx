@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
+            <ScrollToTop />
           </div>
         </BrowserRouter>
       </TooltipProvider>
