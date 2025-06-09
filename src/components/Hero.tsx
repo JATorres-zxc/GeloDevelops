@@ -4,7 +4,7 @@ import { Mail } from 'lucide-react';
 
 const Hero = () => {
   const handleContactClick = () => {
-    window.open('mailto:your@email.com?subject=Let\'s work together!', '_blank');
+    window.open('mailto:gelodevelops@gmail.com?subject=Let\'s work together!', '_blank');
   };
 
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-            A part-time full-stack developer at a tech company and a freelance website builder. 
+            A full-stack developer and a freelance website builder. 
             I can bring your ideas to life with <span className="text-primary dark:text-red-400 font-medium">fast, high-quality websites</span> tailored to your needs.
           </p>
           

@@ -4,7 +4,7 @@ import { Linkedin, Github, Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 mt-20">
+    <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
       <div className="max-w-6xl mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Copyright */}
@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex space-x-6">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/john-angelo-torres-75b561349/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-red-400 transition-colors duration-200"
@@ -26,7 +26,7 @@ const Footer = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/JATorres-zxc"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-red-400 transition-colors duration-200"
@@ -35,7 +35,7 @@ const Footer = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/johnangelo.torres.3/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-red-400 transition-colors duration-200"

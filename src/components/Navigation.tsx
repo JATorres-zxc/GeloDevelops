@@ -13,7 +13,7 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-2xl font-serif font-semibold text-primary dark:text-red-400 hover:text-primary-light transition-colors">
-            Your Name
+            GeloDevelops
           </Link>
           
           <div className="hidden md:flex space-x-8 items-center">

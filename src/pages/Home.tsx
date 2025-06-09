@@ -4,7 +4,7 @@ import { Mail, MessageCircle, Palette, Rocket, HeadphonesIcon, Timer, Users, Shi
 
 const Home = () => {
   const handleContactClick = () => {
-    window.open('mailto:your@email.com?subject=Let\'s work together!', '_blank');
+    window.open('mailto:gelodevelops@gmail.com?subject=Let\'s work together!', '_blank');
   };
 
   const steps = [
@@ -63,7 +63,7 @@ const Home = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-              A part-time full-stack developer at a tech company and a freelance website builder. 
+              A full-stack developer and a freelance website builder. 
               I can bring your ideas to life with <span className="text-primary dark:text-red-400 font-medium">fast, high-quality websites</span> tailored to your needs.
             </p>
             
@@ -83,7 +83,7 @@ const Home = () => {
         
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <div className="flex flex-col items-center text-muted-foreground">
+          <div className="flex flex-col items-center text-gray-400">
             <span className="text-sm mb-2 font-medium">Scroll down to learn more</span>
             <ChevronDown className="w-5 h-5 animate-bounce" />
           </div>
@@ -97,7 +97,7 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
               How It Works
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
               My streamlined process ensures we stay aligned and deliver exactly what you need
             </p>
           </div>
@@ -106,29 +106,29 @@ const Home = () => {
           <div className="hidden lg:block">
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute top-16 left-0 right-0 h-0.5 bg-border"></div>
+              {/* <div className="absolute top-16 left-0 right-0 h-0.5 bg-border"></div> */}
               
               <div className="grid grid-cols-4 gap-8">
                 {steps.map((step, index) => (
                   <div key={step.number} className="relative">
                     {/* Step Number Circle */}
-                    <div className="flex justify-center mb-6">
+                    {/* <div className="flex justify-center mb-6">
                       <div className="w-12 h-12 bg-primary dark:bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg relative z-10">
                         {step.number}
                       </div>
-                    </div>
+                    </div> */}
                     
                     {/* Step Content */}
                     <div className="text-center">
                       <div className="flex justify-center mb-4">
-                        <div className="w-16 h-16 bg-background dark:bg-gray-900 rounded-full flex items-center justify-center border border-border">
-                          <step.icon className="w-8 h-8 text-primary dark:bg-gray-900" />
+                        <div className="w-16 h-16 bg-primary dark:bg-primary rounded-full flex items-center justify-center mb-6">
+                          <step.icon className="w-8 h-8 text-white" />
                         </div>
                       </div>
                       <h3 className="text-xl font-semibold text-foreground mb-3">
                         {step.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -160,7 +160,7 @@ const Home = () => {
                         {step.title}
                       </h3>
                     </div>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-gray-400 leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -172,7 +172,7 @@ const Home = () => {
       </section>
 
       {/* Selling Points Section */}
-      <section className="py-16 px-6">
+      {/* <section className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {sellingPoints.map((point, index) => (
@@ -188,7 +188,7 @@ const Home = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-4">
                     {point.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-gray-400 leading-relaxed">
                     {point.description}
                   </p>
                 </div>
@@ -196,7 +196,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

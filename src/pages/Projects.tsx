@@ -64,7 +64,7 @@ const Projects = () => {
             My Projects
           </h1>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-8"></div>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             A showcase of my recent work and personal projects that demonstrate 
             my skills across different technologies and domains.
           </p>
@@ -82,11 +82,11 @@ const Projects = () => {
         </div>
         
         <div className="text-center mt-16">
-          <p className="text-muted-foreground mb-6">
+          <p className="text-gray-400 mb-6">
             Want to see more of my work or discuss a project?
           </p>
           <button
-            onClick={() => window.open('mailto:your@email.com?subject=Let\'s discuss a project!', '_blank')}
+            onClick={() => window.open('mailto:gelodevelops@gmail.com?subject=Let\'s discuss a project!', '_blank')}
             className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors"
           >
             Get In Touch

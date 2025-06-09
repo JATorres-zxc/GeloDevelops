@@ -49,7 +49,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project })
             
             <div className="space-y-6">
               <div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-gray-400 leading-relaxed">
                   {project.longDescription || project.description}
                 </p>
               </div>

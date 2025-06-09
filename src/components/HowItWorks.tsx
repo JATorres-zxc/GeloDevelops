@@ -37,7 +37,7 @@ const HowItWorks = () => {
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-6">
             How It Works
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
             My streamlined process ensures we stay aligned and deliver exactly what you need
           </p>
         </div>
@@ -68,7 +68,7 @@ const HowItWorks = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-3">
                       {step.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-gray-400 leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -100,7 +100,7 @@ const HowItWorks = () => {
                       {step.title}
                     </h3>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-gray-400 leading-relaxed">
                     {step.description}
                   </p>
                 </div>

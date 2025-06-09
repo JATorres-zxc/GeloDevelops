@@ -38,7 +38,7 @@ const SellingPoints = () => {
                 <h3 className="text-xl font-semibold text-foreground mb-4">
                   {point.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-gray-400 leading-relaxed">
                   {point.description}
                 </p>
               </div>

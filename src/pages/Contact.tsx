@@ -28,7 +28,7 @@ const Contact = () => {
     const subject = `Project Inquiry from ${name}`;
     const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
     
-    window.open(`mailto:your@email.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank');
+    window.open(`mailto:gelodevelops@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank');
   };
 
   const faqData = [
@@ -124,7 +124,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
-                    placeholder="your@email.com"
+                    placeholder="email@gmail.com"
                   />
                 </div>
                 
@@ -166,10 +166,10 @@ const Contact = () => {
                   Prefer to email directly? I usually respond within 24 hours.
                 </p>
                 <button
-                  onClick={() => window.open('mailto:your@email.com', '_blank')}
+                  onClick={() => window.open('mailto:gelodevelops@gmail.com', '_blank')}
                   className="text-primary hover:text-primary-light font-medium transition-colors"
                 >
-                  your@email.com
+                  gelodevelops@gmail.com
                 </button>
               </div>
               
