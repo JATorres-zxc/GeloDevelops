@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, MessageCircle, Palette, Rocket, HeadphonesIcon, Timer, Users, Shield } from 'lucide-react';
+import { Mail, MessageCircle, Palette, Rocket, HeadphonesIcon, Timer, Users, Shield, ChevronDown } from 'lucide-react';
 
 const Home = () => {
   const handleContactClick = () => {
@@ -55,7 +55,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-secondary dark:from-gray-900 dark:to-gray-800">
       {/* Hero Section */}
-      <section className="min-h-[80vh] flex items-center justify-center transition-colors">
+      <section className="min-h-[80vh] flex items-center justify-center transition-colors relative">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-gray-900 dark:text-white mb-6 leading-tight">
@@ -78,6 +78,14 @@ const Home = () => {
           
           <div className="mt-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <div className="w-24 h-1 bg-primary dark:bg-red-400 mx-auto rounded-full opacity-50"></div>
+          </div>
+        </div>
+        
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-col items-center text-muted-foreground">
+            <span className="text-sm mb-2 font-medium">Scroll down to learn more</span>
+            <ChevronDown className="w-5 h-5 animate-bounce" />
           </div>
         </div>
       </section>
