@@ -5,9 +5,12 @@ import { ExternalLink, Github } from 'lucide-react';
 interface ProjectCardProps {
   name: string;
   description: string;
+  longDescription?: string;
   techStack: string[];
   liveUrl?: string;
   githubUrl?: string;
+  imageUrl?: string;
+  onImageClick?: () => void;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -15,12 +18,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   techStack,
   liveUrl,
-  githubUrl
+  githubUrl,
+  imageUrl,
+  onImageClick
 }) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-lg dark:shadow-gray-900/20 transition-all duration-300 p-6 hover:transform hover:scale-[1.02]">
       <div className="mb-4">
-        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{name}</h3>
+        <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">{name}</h3>
+        
+        {imageUrl && (
+          <div 
+            className="mb-4 cursor-pointer rounded-lg overflow-hidden"
+            onClick={onImageClick}
+          >
+            <img 
+              src={imageUrl} 
+              alt={`${name} preview`}
+              className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+            />
+          </div>
+        )}
+        
         <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{description}</p>
       </div>
       
