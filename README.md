@@ -44,13 +44,14 @@ This site is designed to help potential clients:
 
 1. Clone the repo
 
-   git clone https://github.com/your-username/your-portfolio.git
-   cd your-portfolio
-
-2. Install dependencies
+   git clone https://github.com/JATorres-zxc/GeloDevelops.git
+   
+   cd GeloDevelops
+   
+3. Install dependencies
 
    npm install
 
-3. Run the dev server
+4. Run the dev server
    
    npm run dev
