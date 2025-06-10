@@ -9,13 +9,13 @@ const Projects = () => {
 
   const projects = [
     {
-      name: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.',
-      longDescription: 'A comprehensive e-commerce platform built with modern technologies, featuring secure payment processing through Stripe, real-time inventory management, user authentication, shopping cart functionality, and a powerful admin dashboard for managing products, orders, and customers. The platform includes responsive design, search functionality, product filtering, and email notifications.',
-      techStack: ['React', 'Node.js', 'MongoDB', 'Stripe API'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/yourusername/project1',
-      imageUrl: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80'
+      name: 'Work Portfolio',
+      description: 'A sleek, responsive portfolio website showcasing my projects, skills, and experience as a developer.',
+      longDescription: 'This portfolio website is a modern, fully responsive platform I built to highlight my work as a developer. It features a clean, intuitive design and includes detailed showcases of my major projects, categorized by technology and domain. The site also presents my technical skills, resume, and contact information, providing visitors with a clear and professional overview of who I am and what I do. Built with performance and accessibility in mind, the website demonstrates both my front-end and back-end capabilities, serving as a central hub for potential collaborators, employers, or clients to learn more about me.',
+      techStack: ['NextJS', 'Node.js'],
+      liveUrl: 'https://john-angelo-torres-nextjs-portfolio.vercel.app/',
+      githubUrl: 'https://github.com/JATorres-zxc/John-Angelo-Torres',
+      imageUrl: 'src/images/portfolio.png'
     },
     {
       name: 'Task Management App',
