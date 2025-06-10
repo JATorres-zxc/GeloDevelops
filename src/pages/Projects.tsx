@@ -15,7 +15,7 @@ const Projects = () => {
       techStack: ['NextJS', 'Node.js'],
       liveUrl: 'https://john-angelo-torres-nextjs-portfolio.vercel.app/',
       githubUrl: 'https://github.com/JATorres-zxc/John-Angelo-Torres',
-      imageUrl: 'src/images/portfolio.png'
+      imageUrl: '/images/portfolio.png'
     },
     {
       name: 'Task Management App',
