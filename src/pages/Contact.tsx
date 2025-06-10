@@ -25,10 +25,19 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const { name, email, message } = formData;
+
     const subject = `Project Inquiry from ${name}`;
     const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-    
-    window.open(`mailto:gelodevelops@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`, '_blank');
+
+    // Obfuscated email parts
+    const user = 'gelodevelops';
+    const domain = 'gmail.com';
+    const toEmail = `${user}@${domain}`;
+
+    window.open(
+      `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+      '_blank'
+    );
   };
 
   const faqData = [

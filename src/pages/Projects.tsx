@@ -86,7 +86,13 @@ const Projects = () => {
             Want to see more of my work or discuss a project?
           </p>
           <button
-            onClick={() => window.open('mailto:gelodevelops@gmail.com?subject=Let\'s discuss a project!', '_blank')}
+            onClick={() => {
+              const user = 'gelodevelops';
+              const domain = 'gmail.com';
+              const email = `${user}@${domain}`;
+              const subject = "Let's discuss a project!";
+              window.open(`mailto:${email}?subject=${encodeURIComponent(subject)}`, '_blank');
+            }}
             className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors"
           >
             Get In Touch

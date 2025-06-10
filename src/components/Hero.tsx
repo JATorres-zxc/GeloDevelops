@@ -4,7 +4,10 @@ import { Mail } from 'lucide-react';
 
 const Hero = () => {
   const handleContactClick = () => {
-    window.open('mailto:gelodevelops@gmail.com?subject=Let\'s work together!', '_blank');
+    const user = 'gelodevelops';
+    const domain = 'gmail.com';
+    const email = `${user}@${domain}`;
+    window.open(`mailto:${email}?subject=Let's work together!`, '_blank');
   };
 
   return (
