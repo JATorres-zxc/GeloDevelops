@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 
@@ -11,6 +10,7 @@ interface ProjectCardProps {
   githubUrl?: string;
   imageUrl?: string;
   onImageClick?: () => void;
+  onLiveDemoClick?: () => void;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -20,7 +20,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveUrl,
   githubUrl,
   imageUrl,
-  onImageClick
+  onImageClick,
+  onLiveDemoClick
 }) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl dark:shadow-gray-900/30 transition-all duration-300 p-6 hover:transform hover:scale-[1.02] border border-gray-100 dark:border-gray-700">
@@ -58,15 +59,26 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       
       <div className="flex gap-3">
         {liveUrl && (
-          <a
-            href={liveUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center px-4 py-2 bg-primary dark:bg-red-600 text-white rounded-lg hover:bg-primary-light dark:hover:bg-red-700 transition-colors shadow-sm hover:shadow-md"
-          >
-            <ExternalLink className="w-4 h-4 mr-2" />
-            Live Demo
-          </a>
+          onLiveDemoClick ? (
+            <button
+              type="button"
+              onClick={onLiveDemoClick}
+              className="flex items-center px-4 py-2 bg-primary dark:bg-red-600 text-white rounded-lg hover:bg-primary-light dark:hover:bg-red-700 transition-colors shadow-sm hover:shadow-md"
+            >
+              <ExternalLink className="w-4 h-4 mr-2" />
+              Live Demo
+            </button>
+          ) : (
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center px-4 py-2 bg-primary dark:bg-red-600 text-white rounded-lg hover:bg-primary-light dark:hover:bg-red-700 transition-colors shadow-sm hover:shadow-md"
+            >
+              <ExternalLink className="w-4 h-4 mr-2" />
+              Live Demo
+            </a>
+          )
         )}
         {githubUrl && (
           <a

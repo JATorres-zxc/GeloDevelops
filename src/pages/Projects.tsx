@@ -1,11 +1,14 @@
-
 import React, { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import ProjectModal from '../components/ProjectModal';
+import LiveDemoModal from '../components/LiveDemoModal';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [liveDemoProject, setLiveDemoProject] = useState<any>(null);
+  const [isLiveDemoModalOpen, setIsLiveDemoModalOpen] = useState(false);
 
   const projects = [
     {
@@ -76,6 +79,10 @@ const Projects = () => {
               <ProjectCard 
                 {...project} 
                 onImageClick={() => handleImageClick(project)}
+                onLiveDemoClick={() => {
+                  setLiveDemoProject(project);
+                  setIsLiveDemoModalOpen(true);
+                }}
               />
             </div>
           ))}
@@ -104,6 +111,19 @@ const Projects = () => {
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         project={selectedProject}
+        onLiveDemoClick={selectedProject ? () => {
+          setLiveDemoProject(selectedProject);
+          setIsLiveDemoModalOpen(true);
+        } : undefined}
+      />
+
+      <LiveDemoModal
+        isOpen={isLiveDemoModalOpen}
+        onClose={() => {
+          setIsLiveDemoModalOpen(false);
+          setLiveDemoProject(null);
+        }}
+        project={liveDemoProject}
       />
     </div>
   );

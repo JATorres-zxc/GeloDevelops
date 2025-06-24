@@ -1,4 +1,3 @@
-
 import React from 'react';
 import {
   Dialog,
@@ -21,9 +20,10 @@ interface ProjectModalProps {
     githubUrl?: string;
     imageUrl?: string;
   } | null;
+  onLiveDemoClick?: () => void;
 }
 
-const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project }) => {
+const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project, onLiveDemoClick }) => {
   if (!project) return null;
 
   return (
@@ -70,15 +70,26 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project })
               
               <div className="flex gap-3 pt-4">
                 {project.liveUrl && (
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </a>
+                  onLiveDemoClick ? (
+                    <button
+                      type="button"
+                      onClick={onLiveDemoClick}
+                      className="flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live Demo
+                    </button>
+                  ) : (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Live Demo
+                    </a>
+                  )
                 )}
                 {project.githubUrl && (
                   <a
