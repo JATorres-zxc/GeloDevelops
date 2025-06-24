@@ -18,13 +18,13 @@ const Projects = () => {
       imageUrl: '/images/portfolio.png'
     },
     {
-      name: 'Task Management App',
-      description: 'Collaborative project management tool with real-time updates, team collaboration features, and analytics.',
-      longDescription: 'A powerful task management application designed for teams, featuring real-time collaboration through WebSocket connections, drag-and-drop task organization, time tracking, project analytics, team member management, and customizable workflows. The app includes notification systems, file attachments, and detailed reporting dashboards.',
-      techStack: ['Vue.js', 'Express.js', 'PostgreSQL', 'Socket.io'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/yourusername/project2',
-      imageUrl: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80'
+      name: 'SynapseAI',
+      description: 'A MERN real-time chat app with secure messaging and AI chatbot WIP.',
+      longDescription: 'SynapseAI is a modern real-time chat application built with the MERN stack, designed to provide secure, fast, and user-friendly messaging. It features real-time communication using Socket.IO, secure authentication via JWT and cookies, file uploads with size limits, and a responsive interface. An AI-powered chatbot is currently in development to enhance the user experience with intelligent responses and assistance. Deployed using Vercel for the frontend and Render for the backend, this project demonstrates practical implementation of full-stack development with a focus on real-time and AI capabilities.',
+      techStack: ['MongoDB', 'Express.js', 'React', 'Node.js'],
+      liveUrl: 'https://synapse-ai-lilac.vercel.app/',
+      githubUrl: 'https://github.com/JATorres-zxc/SynapseAI',
+      imageUrl: '/images/chatapp1.png'
     },
     {
       name: 'Weather Dashboard',
