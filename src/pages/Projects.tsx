@@ -30,21 +30,21 @@ const Projects = () => {
       imageUrl: '/images/chatapp1.png'
     },
     {
-      name: 'Weather Dashboard',
-      description: 'Interactive weather application with location-based forecasts, historical data, and beautiful visualizations.',
-      longDescription: 'An interactive weather dashboard that provides comprehensive weather information including current conditions, 7-day forecasts, historical weather data, and beautiful data visualizations. Features include geolocation-based weather detection, multiple location management, weather alerts, UV index tracking, and interactive charts showing temperature, humidity, and precipitation trends.',
-      techStack: ['React', 'Python', 'FastAPI', 'Chart.js'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/yourusername/project3',
-      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80'
+      name: 'DevDiaries',
+      description: 'A MERN tech blog app where developers, coders, and tech enthusiasts can share posts, tutorials, ideas, and experiences.',
+      longDescription: 'A MERN tech blog app built for programmers, coders, and tech enthusiasts to freely share thoughts, tutorials, and experiences. Users can publish and manage blog posts, follow others, bookmark favorite posts, and engage through comments and threaded replies. The app features robust authentication, essential blogging tools, a clean and responsive UI, and is designed for smooth interaction and content discovery.',
+      techStack: ['MongoDB', 'Express.js', 'React', 'Node.js'],
+      liveUrl: 'https://dev-diaries.vercel.app/',
+      githubUrl: 'https://github.com/JATorres-zxc/DevDiaries',
+      imageUrl: '/images/dd-preview.png'
     },
     {
-      name: 'Portfolio Website',
-      description: 'Responsive portfolio website with modern design, smooth animations, and optimized performance.',
-      longDescription: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations, optimized performance, and clean design. Built with accessibility in mind, featuring dark/light mode toggle, smooth scrolling, lazy loading images, SEO optimization, and contact form integration. The site includes project galleries, testimonials, and a blog section.',
-      techStack: ['React', 'Tailwind CSS', 'Framer Motion'],
-      liveUrl: 'https://example.com',
-      githubUrl: 'https://github.com/yourusername/project4',
+      name: 'SmartCV AI - WIP',
+      description: 'A smart CV generator using AI to create personalized resumes based on user inputs.',
+      longDescription: 'A smart CV generator using AI to create personalized resumes based on user inputs. Built with accessibility in mind, featuring dark/light mode toggle, smooth scrolling, lazy loading images, SEO optimization, and contact form integration. The site includes project galleries, testimonials, and a blog section.',
+      techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'OpenAI'],
+      liveUrl: 'https://smartcv-ai.vercel.app/',
+      githubUrl: 'https://github.com/JATorres-zxc/SmartCV-AI',
       imageUrl: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80'
     }
   ];
