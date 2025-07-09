@@ -39,13 +39,13 @@ const Projects = () => {
       imageUrl: '/images/dd-preview.png'
     },
     {
-      name: 'SmartCV AI - WIP',
-      description: 'A smart CV generator using AI to create personalized resumes based on user inputs.',
-      longDescription: 'A smart CV generator using AI to create personalized resumes based on user inputs. Built with accessibility in mind, featuring dark/light mode toggle, smooth scrolling, lazy loading images, SEO optimization, and contact form integration. The site includes project galleries, testimonials, and a blog section.',
-      techStack: ['React', 'Tailwind CSS', 'Framer Motion', 'OpenAI'],
-      liveUrl: 'https://smartcv-ai.vercel.app/',
-      githubUrl: 'https://github.com/JATorres-zxc/SmartCV-AI',
-      imageUrl: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80'
+      name: 'NexCV - WIP',
+      description: 'An AI-powered tool to generate and analyze resumes and CVs, providing instant feedback and professional templates. Uses a free Gemini API key (may be limited by rate limits)',
+      longDescription: 'An AI-powered resume and CV generator and analyzer that helps users create professional documents and get instant feedback. Uses a free Gemini API key, so results may be limited or unavailable at times due to rate limits.',
+      techStack: ['React', 'Tailwind CSS', 'Gemini API', 'Express.js', 'Node.js'],
+      liveUrl: 'https://nex-cv.vercel.app/',
+      githubUrl: 'https://github.com/JATorres-zxc/NexCV',
+      imageUrl: '/images/nexcvv.png'
     }
   ];
 
